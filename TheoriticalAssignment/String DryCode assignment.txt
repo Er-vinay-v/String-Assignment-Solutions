@@ -1,0 +1,115 @@
+﻿ASSIGNMENT SOLUTION
+
+
+1.Write a simple program to take input from user 
+Import java.util.scanner;
+Ans: public class UserInput{
+public static void main(String[] argos){
+Scanner sc=new Scanner(System.in);
+System.out.println(“Enter your NickName”);
+String name=sc.nextLine();
+}
+}
+
+
+2.How do you concat two strings in Java ? Give an example?
+Ans: if we want to concat two string in java then we need  to (+) operator -
+String s1=”pw”;
+String s2=”skills”;
+
+
+String s3 =s1+s2;
+
+
+3.How do find the length of a string in java give an example ?
+Ans: if i want to find the length of given String then java will provide a inbuilt method i.e length() , using this method we can easily find the length of the string lets see an example-
+
+
+String course=”java with system design”;
+Int length=course.length();
+System.out.println(length);
+
+
+Output → 23
+
+
+4.How do you compare two strings in Java ?
+Ans: if we want to compare two string then we need to use java inbuilt function i.e equals() –
+public class compare{
+public static void main(String[] args){
+String s1=”Vinay”;
+String s2=”Verma”;
+boolean b =s1.equals(s2);
+System.out.println(b);
+}
+}
+Output - false;
+
+
+5.write a program to  find the length of a given String “Refrigerator” .
+Ans: public class FindLengt{
+Public static void main(String[] args){
+String s=“Refrigerator”;
+Int length=s.length();
+System.out.println(length);
+}
+}
+
+
+Output : 12
+
+
+6.Write a program to check if the character ‘e’ is present in the given string “Umbrella”.
+Ans: public static void main(String[] args){
+String a = "Umbrella";
+boolean per = false;
+for(int i = 0;i<a.length();i++){
+if(a.charAt(i) == 'e'){
+per=true;
+break;
+}
+}
+System.out.println(per);
+}
+}
+
+
+Output : true
+
+
+7.Write a program to delete all the consonants from the String (Take input from user) .
+Ans: class DeleteConsonants{
+public static void main(String args[])
+{
+String s;
+int j=0;
+System.out.println("Enter a string");
+Scanner sc=new Scanner(System.in);
+s= so.nextLine();
+char ch[]=new char[20];
+for(int i=0;i<s.length();i++)
+{
+if(s.charAt(i)=='a'||s.charAt(i)=='A'||s.charAt(i)=='e'||
+s.charAt(i)=='E'||s.charAt(i)=='i'||s.charAt(i)=='I'||s.charAt(i)=='o'||
+s.charAt(i)=='O'||s.charAt(i)=='U'|| s.charAt(i)=='u')
+{
+ch[j++]=s.charAt(i);
+}
+else
+{
+continue;
+Assignment Solutions
+
+
+Cracking the Coding Interview in JAVA - Foundation
+
+
+}
+}
+for(int i=0;i<j;i++)
+{
+System.out.print(ch[i]);
+}
+System.out.println();
+}
+}

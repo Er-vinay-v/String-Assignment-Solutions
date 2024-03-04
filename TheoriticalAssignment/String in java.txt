@@ -1,0 +1,39 @@
+﻿ASSIGNMENT SOLUTIONS
+
+
+1.what is String in Java ?
+Ans:Generally, String is a sequence of characters. But in Java, string is an object that represents a sequence of characters. The java.lang.String class is used to create a string object.example -
+String s=”Vinay”;
+
+
+2. Type of String in Java are ?
+Ans: In java there are basically two types of String such as –
+1. Immutable String
+2. Mutable String
+
+
+3.How many ways can you create String objects in Java ?
+Ans: In java we can create String object in four ways –
+       a.By using String literal —>String s=”Vinay”;
+       b.By using new keyword —> String s=new String(“Vinay”);
+       c.using character array --> char[]arr={'a','b'};
+       d.using stringBuffer class --> StringBuffer str=new StringBuffer("Vinay");
+       e.using stringBuilder class --> StringBuilder st=new StringBuilder("Vinay");
+
+
+4.What is String constant pool ?
+Ans: String constant pool is a small part of the heap memory.if i create String object using string literal then JVM will provide memory location in String constant pool area which is available in the heap memory.
+
+
+5.What do you mean by mutable and immutable objects ?
+Ans: Immutable:- Such types of String object which once initialize the value then cannot change its value is called mutable String.if we want to create immutable object then we need to use String literal. Immutable String object i.e –
+String str = ”PWSKILLS”;
+
+
+
+
+mutable:- mutable types refer to objects whose state can be changed after their creation.In simple terms,you can modify the values of properties,fields,or elements within a mutable object once it’s been instantiated.This characteristic brings flexibility but also potential complexities in our code. There are two method which is use to achieve mutability i.e –
+StringBuilder str=new StringBuilder(“Vinay”); 
+StringBuffer st=new StringBuffer(“Verma”);
+6.where exactly is the String Constant pool located in the memory?
+Ans: The Java string constant pool is an area in heap memory where Java stores literal string values. The heap is an area of memory used for run-time operations. When a new variable is created and given a value, Java checks to see if that exact value exists in the pool.
